@@ -4,13 +4,13 @@
 #
 Name     : R-miscTools
 Version  : 0.6.22
-Release  : 14
+Release  : 15
 URL      : https://cran.r-project.org/src/contrib/miscTools_0.6-22.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/miscTools_0.6-22.tar.gz
 Summary  : Miscellaneous Tools and Utilities
 Group    : Development/Tools
 License  : GPL-2.0+
-BuildRequires : clr-R-helpers
+BuildRequires : buildreq-R
 
 %description
 Many of them facilitate the work with matrices,
@@ -29,11 +29,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1523319096
+export SOURCE_DATE_EPOCH=1552776563
 
 %install
+export SOURCE_DATE_EPOCH=1552776563
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1523319096
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -68,8 +68,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library miscTools|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  miscTools || :
 
 
 %files
@@ -94,3 +93,19 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/miscTools/help/paths.rds
 /usr/lib64/R/library/miscTools/html/00Index.html
 /usr/lib64/R/library/miscTools/html/R.css
+/usr/lib64/R/library/miscTools/tests/colMediansTest.R
+/usr/lib64/R/library/miscTools/tests/colMediansTest.Rout.save
+/usr/lib64/R/library/miscTools/tests/ddnormTest.R
+/usr/lib64/R/library/miscTools/tests/ddnormTest.Rout.save
+/usr/lib64/R/library/miscTools/tests/insertColRow.R
+/usr/lib64/R/library/miscTools/tests/insertColRow.Rout.save
+/usr/lib64/R/library/miscTools/tests/lmMethods.R
+/usr/lib64/R/library/miscTools/tests/lmMethods.Rout.save
+/usr/lib64/R/library/miscTools/tests/margEffTest.R
+/usr/lib64/R/library/miscTools/tests/margEffTest.Rout.save
+/usr/lib64/R/library/miscTools/tests/semidefTest.R
+/usr/lib64/R/library/miscTools/tests/semidefTest.Rout.save
+/usr/lib64/R/library/miscTools/tests/stdErTests.R
+/usr/lib64/R/library/miscTools/tests/stdErTests.Rout.save
+/usr/lib64/R/library/miscTools/tests/sumKeepAttrTest.R
+/usr/lib64/R/library/miscTools/tests/sumKeepAttrTest.Rout.save
