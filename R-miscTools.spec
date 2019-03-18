@@ -4,7 +4,7 @@
 #
 Name     : R-miscTools
 Version  : 0.6.22
-Release  : 16
+Release  : 17
 URL      : https://cran.r-project.org/src/contrib/miscTools_0.6-22.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/miscTools_0.6-22.tar.gz
 Summary  : Miscellaneous Tools and Utilities
@@ -29,10 +29,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552776563
+export SOURCE_DATE_EPOCH=1552929646
 
 %install
-export SOURCE_DATE_EPOCH=1552776563
+export SOURCE_DATE_EPOCH=1552929646
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
