@@ -5,6 +5,16 @@ A full ChangeLog is available in the log messages of the SVN repository
 on R-Forge.
 
 
+            CHANGES IN VERSION 0.6-24  (2019-10-11)
+            
+* added function summarizeDF()
+
+* significantly reduced the computation time of isSemidefinite.matrix( ,
+method = "eigen" ) if the matrix is (nearly) singular
+
+* moved function logDataSet() to package "micEcon"
+
+
             CHANGES IN VERSION 0.6-22  (2016-11-25)
 
 * function isSemidefinite() is a 'generic' function now, currently with
