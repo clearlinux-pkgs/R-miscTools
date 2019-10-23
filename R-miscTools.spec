@@ -4,7 +4,7 @@
 #
 Name     : R-miscTools
 Version  : 0.6.24
-Release  : 22
+Release  : 23
 URL      : https://cran.r-project.org/src/contrib/miscTools_0.6-24.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/miscTools_0.6-24.tar.gz
 Summary  : Miscellaneous Tools and Utilities
@@ -13,6 +13,7 @@ License  : GPL-2.0+
 Requires: R-digest
 BuildRequires : R-digest
 BuildRequires : buildreq-R
+BuildRequires : util-linux
 
 %description
 Many of them facilitate the work with matrices,
@@ -31,10 +32,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1570784034
+export SOURCE_DATE_EPOCH=1571866643
 
 %install
-export SOURCE_DATE_EPOCH=1570784034
+export SOURCE_DATE_EPOCH=1571866643
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
