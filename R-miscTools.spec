@@ -4,7 +4,7 @@
 #
 Name     : R-miscTools
 Version  : 0.6.26
-Release  : 27
+Release  : 28
 URL      : https://cran.r-project.org/src/contrib/miscTools_0.6-26.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/miscTools_0.6-26.tar.gz
 Summary  : Miscellaneous Tools and Utilities
@@ -25,21 +25,22 @@ Many of them facilitate the work with matrices,
 
 %prep
 %setup -q -c -n miscTools
+cd %{_builddir}/miscTools
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1575906163
+export SOURCE_DATE_EPOCH=1589519688
 
 %install
-export SOURCE_DATE_EPOCH=1575906163
+export SOURCE_DATE_EPOCH=1589519688
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
