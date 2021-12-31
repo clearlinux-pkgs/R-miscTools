@@ -4,7 +4,7 @@
 #
 Name     : R-miscTools
 Version  : 0.6.26
-Release  : 39
+Release  : 40
 URL      : https://cran.r-project.org/src/contrib/miscTools_0.6-26.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/miscTools_0.6-26.tar.gz
 Summary  : Miscellaneous Tools and Utilities
