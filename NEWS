@@ -1,9 +1,14 @@
 THIS IS THE CHANGELOG OF THE "miscTools" PACKAGE
 
 Please note that only the most significant changes are reported here.
-A full ChangeLog is available in the log messages of the SVN repository
-on R-Forge.
+A full ChangeLog is available in the log messages of the Git repository
+at GitHub: https://github.com/arne-henningsen/miscTools/commits/main
 
+
+            CHANGES IN VERSION 0.6-28  (2023-05-03)
+
+* added function histDens()            
+            
 
             CHANGES IN VERSION 0.6-26  (2019-12-08)
 
